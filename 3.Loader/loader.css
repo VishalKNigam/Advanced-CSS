@@ -1,0 +1,42 @@
+body{
+    background-color: teal;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.circle:nth-child(1){
+    animation-delay: 0.1s;
+}
+.circle:nth-child(2){
+    animation-delay: 0.2s;
+
+}
+.circle:nth-child(3){
+    animation-delay: 0.3s;
+
+}
+.circle:nth-child(4){
+    animation-delay: 0.4s;
+
+}
+@keyframes loader {
+    from{
+        transform: translateY(-10px)
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
